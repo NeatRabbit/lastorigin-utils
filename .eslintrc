@@ -1,5 +1,8 @@
 {
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier"],
-  "plugins": ["jsdoc"]
-}  
+  "plugins": ["jsdoc"],
+  "env": {
+    "browser": true
+  }
+}

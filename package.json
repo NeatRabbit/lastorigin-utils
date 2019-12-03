@@ -5,6 +5,9 @@
   "repository": "https://github.com/NeatRabbit/lastorigin-utils.git",
   "author": "NeatRabbit <siro@usagi.space>",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel src/client/index.html src/data_manager/index.html"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.6.0",
@@ -17,5 +20,12 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "parcel": "^1.12.4",
     "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "emotion": "^10.0.23",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
   }
 }

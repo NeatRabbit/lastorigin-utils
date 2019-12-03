@@ -3,7 +3,9 @@
     "target": "es2016",
     "checkJs": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
+    // "moduleResolution": "node",
+    "module": "commonjs",
+    "jsx": "react"
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
