@@ -3,21 +3,23 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Link,
+  NavLink,
   Redirect
 } from 'react-router-dom';
 import Equipment from './pages/Equipment';
 import Character from './pages/Character';
 
-import styles from './styles/common';
-
+import * as commonStyle from '../client/styles/common';
+import * as navigatorStyle from '../client/styles/navigator';
 
 export default () => (
   <Router>
-    <div>
-      <nav className={styles.navigator}>
-        <Link className={styles.link} to="/char">Character</Link>
-        <Link className={styles.link} to="/equip/">Equipment</Link>
+    <div className={commonStyle.wrap}>
+      <nav className={navigatorStyle.wrap}>
+        <div className={navigatorStyle.inner}>
+          <NavLink className={navigatorStyle.link} activeClassName={navigatorStyle.isActive} to="/char">Character</NavLink>
+          <NavLink className={navigatorStyle.link} activeClassName={navigatorStyle.isActive} to="/equip">Equipment</NavLink>
+        </div>
       </nav>
       <div>
         <Switch>

@@ -1,0 +1,32 @@
+{
+  "type": {
+    "name": "타입",
+    "data": [
+      {
+        "name": "LIGHT",
+        "label": "기동형"
+      }, {
+        "name": "MODERATE",
+        "label": "경장형"
+      }, {
+        "name": "HEAVY",
+        "label": "중장형"
+      }
+    ]
+  },
+  "role": {
+    "name": "역할",
+    "data": [
+      {
+        "name": "ATTACKER",
+        "label": "공격기"
+      }, {
+        "name": "DEFENDER",
+        "label": "보호기"
+      }, {
+        "name": "SUPPORTER",
+        "label": "지원기"
+      }
+    ]
+  }
+}

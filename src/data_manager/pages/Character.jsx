@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Link,
+  NavLink,
   Switch,
   Route,
   Redirect
@@ -9,7 +9,7 @@ import {
 import CharacterBase from '../components/Character/Base';
 import CharacterList from '../components/Character/List';
 
-import styles from '../styles/common';
+import * as navigatorStyle from '../../client/styles/navigator';
 /**
  * Component for Character Router
  *
@@ -18,9 +18,11 @@ import styles from '../styles/common';
  */
 const Character = ({match}) => (
   <div>
-    <nav className={styles.navigator}>
-      <Link className={styles.link} to={`${match.path}/base`}>Base</Link>
-      <Link className={styles.link} to={`${match.path}/list`}>List</Link>
+    <nav className={navigatorStyle.wrap}>
+      <div className={navigatorStyle.inner}>
+        <NavLink className={navigatorStyle.link} activeClassName={navigatorStyle.isActive} to={`${match.path}/base`}>Base</NavLink>
+        <NavLink className={navigatorStyle.link} activeClassName={navigatorStyle.isActive} to={`${match.path}/list`}>List</NavLink>
+      </div>
     </nav>
     <div>
       <Switch>
